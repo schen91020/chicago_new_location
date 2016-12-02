@@ -1,8 +1,8 @@
 # Site settings
-title: Asian/French Bakery
-description: 'Expanding to a new location in Chicago'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno/'
+title: A New Location in Chicago
+description: 'Analysis of finding the new location.'
+url: 'http://schen91020.github.io'
+baseurl: '/chicago_new_location/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
