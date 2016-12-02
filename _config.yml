@@ -1,26 +1,42 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+# Site settings
+title: Willian Justen - Desenvolvedor Front End
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "/cards-jekyll-template" # the subpath of your site, e.g. /blog
+url: "https://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
+disqus_username: lorem_ipsum
 
-# Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
 
-paginate:         5
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
 
-# Custom vars
-version:          2.1.0
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Series
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: About Me
+    url: /about
 
-github:
-  repo:           https://github.com/poole/hyde
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
