@@ -4,38 +4,55 @@
     <title>Chicago New Location</title>
     <description>Analysis of Opening a New Location</description>
     <link>https://schen91020.github.io/chicago_new_location//</link>
-    <atom:link href="https://schen91020.github.io/chicago_new_location//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 01 Dec 2016 23:27:53 -0600</pubDate>
-    <lastBuildDate>Thu, 01 Dec 2016 23:27:53 -0600</lastBuildDate>
+    <atom:link href="https://schen91020.github.io/chicago_new_location//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 02 Dec 2016 00:09:38 -0600</pubDate>
+    <lastBuildDate>Fri, 02 Dec 2016 00:09:38 -0600</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Markdown flavour</title>
+        <description>&lt;p&gt;I have some text.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;I want some &lt;em&gt;italics&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;I want some &lt;strong&gt;bold&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;h1 id=&quot;this-is-heading-1&quot;&gt;this is heading 1&lt;/h1&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;this-is-heading-2&quot;&gt;this is heading 2&lt;/h2&gt;
 
+&lt;h3 id=&quot;this-is-heading-3&quot;&gt;this is heading 3&lt;/h3&gt;
+
+&lt;p&gt;you want a list?
+* first
+* second
+* third&lt;/p&gt;
+
+&lt;p&gt;you want an ordered list?
+1. whatever
+1. whatever
+1. whatever&lt;/p&gt;
 </description>
-        <pubDate>Fri, 08 Jan 2016 09:04:23 -0600</pubDate>
-        <link>https://schen91020.github.io/chicago_new_location//2016/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">https://schen91020.github.io/chicago_new_location//2016/welcome-to-jekyll/</guid>
-        
-        <category>jekyll</category>
+        <pubDate>Sat, 05 Nov 2016 17:00:00 -0500</pubDate>
+        <link>https://schen91020.github.io/chicago_new_location/#2016-11-05-17</link>
+        <guid isPermaLink="true">/2016/test</guid>
         
         
-        <category>jekyll</category>
+      </item>
+    
+      <item>
+        <title>Welcome and Getting Started</title>
+        <description>&lt;p&gt;Welcome to this jekyll theme!&lt;br /&gt;
+Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; how you want, and see what happens…..&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Sep 2016 15:10:00 -0500</pubDate>
+        <link>https://schen91020.github.io/chicago_new_location/#2016-09-19-15</link>
+        <guid isPermaLink="true">/2016/welcome</guid>
+        
+        <category>example</category>
+        
+        <category>welcome</category>
+        
         
       </item>
     

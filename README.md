@@ -1,45 +1,38 @@
-# jekyll-uno
+# onepage
+uncomplicated single-page jekyll blog theme
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+# [DEMO](http://himsel.me)
 
-> :warning:
-  This theme requires ruby and rubygems installed
+# use it! - 4 easy steps
 
-### Features
+#### 1. fork this repository and rename it
 
-* Clean layout
-* Resposive layout
-* Pagination
-* Syntax highlighting
-* Social links
-* Tags listing page
-* Categories listing page
-* Google Analytics integration
-* Disqus integration
+#### 2. create a branch called `gh-pages`
 
----
+#### 3. edit the `_config.yml` file  
 
-### Install and Test
+3.1. paste your `title` and `description`  
 
-1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
-2. Enter the folder: `cd jekyll-uno/`
-3. If you don't have bundler installed: `gem install bundler`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `bundle exec jekyll serve --watch`
+3.2. give your site's url with protocol (http or https) to the variable `url`  
 
-Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+3.3. the part after your page domain, for example you have `http://himsel.me/onepage`, `baseurl: "/onepage"` is the right value
 
----
+3.4. paste **github** and **twitter** username to the following variables. Important: **without** @ prefix  
 
-### Demo and Download
+3.5. `accent` is the color code for the blog column
 
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+3.6. edit address and name, email too.
 
-![jekyll-uno - free Jekyll theme](/screenshot.png)
+3.7. you are using google analytics? paste your ID to `g_analytics: ""`
 
----
+3.8. edit html content language here: `isolang: en`, default is english
 
-### Copyright and license
+#### 4. start writing posts
 
-It is under [the MIT license](/LICENSE).
+4.1 posts are in the directory `_posts`  
+
+4.2 see here an introduction: http://jekyllrb.com/docs/posts/  
+
+# thank you
+share this project, give a star, contributions welcome  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

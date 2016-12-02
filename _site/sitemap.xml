@@ -1,97 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
+  <url>
+    <loc>https://schen91020.github.io/chicago_new_location//2016/test/</loc>
     
-    <url>
-      <loc>https://schen91020.github.io/2016/welcome-to-jekyll/</loc>
-      
-        <lastmod>2016-01-08T09:04:23-06:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
+    <lastmod>2016-11-05T17:00:00-05:00</lastmod>
     
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://schen91020.github.io/chicago_new_location//2016/welcome/</loc>
+    
+    <lastmod>2016-09-19T15:10:00-05:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
   
   
-    
-    <url>
-      <loc>https://schen91020.github.io/categories/</loc>
-      
-        <lastmod>2016-12-01T23:27:53-06:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
   
-    
-    <url>
-      <loc>https://schen91020.github.io/feed.xml</loc>
-      
-        <lastmod>2016-12-01T23:27:53-06:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
   
-    
-    <url>
-      <loc>https://schen91020.github.io/</loc>
-      
-        <lastmod>2016-12-01T23:27:53-06:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
   
-    
-    <url>
-      <loc>https://schen91020.github.io/js/main.js</loc>
-      
-        <lastmod>2016-12-01T23:27:53-06:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
   
-    
   
-    
-    <url>
-      <loc>https://schen91020.github.io/tags/</loc>
-      
-        <lastmod>2016-12-01T23:27:53-06:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
+  
+  
   
 </urlset>

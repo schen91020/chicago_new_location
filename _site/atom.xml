@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Chicago New Location</title>
+ <link href="https://schen91020.github.io/chicago_new_location//atom.xml" rel="self"/>
+ <link href="https://schen91020.github.io/chicago_new_location/"/>
+ <updated>2016-12-02T00:09:38-06:00</updated>
+ <id>https://schen91020.github.io/chicago_new_location/</id>
+ <author>
+   <name>{"name"=>"Samuel Chen", "email"=>"samuelgchen@gmail.com", "twitter_username"=>"SamuelChenTweet", "linkedin_username"=>"samuelgchen"}</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Markdown flavour</title>
+   <link href="https://schen91020.github.io/chicago_new_location/#2016-11-05-17"/>
+   <updated>2016-11-05T17:00:00-05:00</updated>
+   <id>/2016/test</id>
+   <content type="html">&lt;p&gt;I have some text.&lt;/p&gt;
+
+&lt;p&gt;I want some &lt;em&gt;italics&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I want some &lt;strong&gt;bold&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;this-is-heading-1&quot;&gt;this is heading 1&lt;/h1&gt;
+
+&lt;h2 id=&quot;this-is-heading-2&quot;&gt;this is heading 2&lt;/h2&gt;
+
+&lt;h3 id=&quot;this-is-heading-3&quot;&gt;this is heading 3&lt;/h3&gt;
+
+&lt;p&gt;you want a list?
+* first
+* second
+* third&lt;/p&gt;
+
+&lt;p&gt;you want an ordered list?
+1. whatever
+1. whatever
+1. whatever&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Welcome and Getting Started</title>
+   <link href="https://schen91020.github.io/chicago_new_location/#2016-09-19-15"/>
+   <updated>2016-09-19T15:10:00-05:00</updated>
+   <id>/2016/welcome</id>
+   <content type="html">&lt;p&gt;Welcome to this jekyll theme!&lt;br /&gt;
+Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; how you want, and see what happens…..&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
