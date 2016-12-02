@@ -1,26 +1,37 @@
 ---
 layout: default
---- 
+title: Home
+---
 
-{% for post in site.posts %}
-<div id="{{ post.date | date: "%F-%H" }}" class="unit whole align-left post">
-	<article itemscope itemtype="http://schema.org/BlogPosting">
-		<h2>{{ post.title }}<br>
-		<small class="chip">{{ post.date | date: "%b %-d, %Y" }}</small>
-		<a class="chip" href="https://twitter.com/intent/tweet?text={{ post.title | cgi_escape }}&url={{ post.date | date: "%F-%H" | prepend: "#" | prepend: site.baseurl | prepend: site.url | cgi_escape }}"><i class="icon ion-social-twitter"></i> TWEET</a>
-		<a class="chip" href="{{ site.url }}{{ site.baseurl }}#{{ post.date | date: "%F-%H" }}"><i class="icon ion-android-share-alt"></i> LINK</a>
-		</h2>
-		
-		<div class="post-content">
-			{{ post.content }}
-		</div>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-		{% if post.author %}
-		<span class="chip" itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<span itemprop="name">Article by {{ post.author }}</span>
-		</span>
-		{% endif %}
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-	</article>
+    {{ post.content }}
+  </div>
+  {% endfor %}
 </div>
-{% endfor %}
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

@@ -1,30 +1,26 @@
-safe: false
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# build settings
-markdown: kramdown
-highlighter: rouge
-lsi: false
-permalink: /:title
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
-title: "Your Name"
-description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
-baseurl: ""
-url: "http://himsel.me" # replace by your site's url
-twitter_username: your-name
-github_username:  lukas-h # (your name)
-accent: "#f7f7e6" # accent color for blog column
+# Setup
+title:            Hyde
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://hyde.getpoole.com
+baseurl:          /
 
-author: "Your Name"
-address: "Your Street, <br>Your City, Country"
-email: "your@email.com"
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
 
-# google analytics tracking code, please change the value
-g_analytics: ""
+paginate:         5
 
-# language settings
-isolang: en
+# Custom vars
+version:          2.1.0
 
-# exclude files
-exclude:
-  - LICENSE
-  - README.md
+github:
+  repo:           https://github.com/poole/hyde
