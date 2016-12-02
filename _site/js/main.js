@@ -15,7 +15,7 @@ $(document).ready(function () {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
-  if (window.location.pathname !== '/jekyll-uno/' && window.location.pathname !== '/jekyll-uno/index.html') {
+  if (window.location.pathname !== '/chicago_new_location/' && window.location.pathname !== '/chicago_new_location/index.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
