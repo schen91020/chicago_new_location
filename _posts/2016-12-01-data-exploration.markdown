@@ -1,6 +1,6 @@
 ---
 title:  "Data Exploration"
-date:   2016-11-01 15:04:23
+date:   2016-12-01 15:15:23
 ---
 The type of business can make a difference in terms of taking advantage of the given data. In this analysis, I am assuming that it's a bakery that needs a lot of in-store traffic.
 

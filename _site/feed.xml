@@ -5,8 +5,8 @@
     <description>Analysis on finding the new location.</description>
     <link>http://schen91020.github.io/chicago_new_location//</link>
     <atom:link href="http://schen91020.github.io/chicago_new_location//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 02 Dec 2016 22:53:52 -0600</pubDate>
-    <lastBuildDate>Fri, 02 Dec 2016 22:53:52 -0600</lastBuildDate>
+    <pubDate>Sat, 03 Dec 2016 00:10:48 -0600</pubDate>
+    <lastBuildDate>Sat, 03 Dec 2016 00:10:48 -0600</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -68,15 +68,69 @@
 
 &lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/stacked_daytype_rides.png&quot; alt=&quot;box_daytype&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 01 Nov 2016 10:04:23 -0500</pubDate>
-        <link>http://schen91020.github.io/chicago_new_location//2016/initial-analysis/</link>
-        <guid isPermaLink="true">http://schen91020.github.io/chicago_new_location//2016/initial-analysis/</guid>
+        <pubDate>Thu, 01 Dec 2016 09:15:23 -0600</pubDate>
+        <link>http://schen91020.github.io/chicago_new_location//2016/data-exploration/</link>
+        <guid isPermaLink="true">http://schen91020.github.io/chicago_new_location//2016/data-exploration/</guid>
         
         
       </item>
     
       <item>
-        <title>Initial Analysis</title>
+        <title>Further Research</title>
+        <description>&lt;p&gt;From the initial exploration, we found the station with highest number of rides is Clark/Lake. The station with lowest number of rides is Homan.&lt;/p&gt;
+
+&lt;p&gt;Locating these two stations on a map will be helpful.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/stations_max_min.png&quot; alt=&quot;stations_max_min&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seeing the locations of these two stations, it explains the number of rides. It will be great to combine the number of rides per station and locate them on a map. A very rough idea looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/map_barcharts.jpeg&quot; alt=&quot;map_barcharts&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We have witnessed the seasonality in rides. To see if it’s weather related, I can get the historical data  and compare. The weather data will look like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/historical_temp_chicago.png&quot; alt=&quot;historical_weather&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The coldest months are December. Does that coincide with the lowest number of rides?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/max_rides_ma.png&quot; alt=&quot;max_rides_ma&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Zooming in, the trough does seem to coincide with the lowest temperature in Chicago.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/cl_head_ma.png&quot; alt=&quot;cl_head_ma&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;However, what about the folks who travel? Perhaps, they simply left town. We can look at airline data. For now, I will only include a link:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flychicago.com/OHare/EN/AboutUs/Facts/Air-Traffic-Data.aspx&quot;&gt;air_traffic&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the data exploration, we have mentioned if a new location is looking for steady foot traffic, perhaps looking for a station with the highest mean and lowest standard deviation might help. First look at the mean vs stdev chart grouped by stations:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/mean_std_rides.png&quot; alt=&quot;mean_std_rides&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But just like in many other fields of study, there is no free lunch. As the number of rides increase, we are also witnessing an increase in standard deviation. Therefore, applying some optimization algorithm will help in identifying a few stations here.&lt;/p&gt;
+
+&lt;p&gt;If a bakery is to open a new location, demographic information will certainly help. One, the income level helps to determine the price point. Sell a slice of cake for $6.99 will not work in a low income area. There is a very good resource at &lt;a href=&quot;https://datausa.io/profile/geo/chicago-il/&quot;&gt;data_usa&lt;/a&gt; that will help in finding out more about the type of potential customers. The data that can be explored will be:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/data_usa_income.png&quot; alt=&quot;income_map&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Age, heritage and language will all need to be considered. Having time-stamp on the commuters data will also help the new location to anticipate the traffic.
+Combining that with the station information, we will have a much better idea of where to start a new location. In particular, if near a busy station, during a certain time of the day, there are many kids, the bakery can prepare items that will be suitable.&lt;/p&gt;
+
+&lt;p&gt;Also note that the daytype provided is only for workday vs. Saturday and holidays. We can also explore if there are variations among different days.&lt;/p&gt;
+
+&lt;p&gt;We can also explore proximity to office buildings around each potential new location. Assuming we are going to start the new location near a busy station. What about the nearby shops and competitions? I have included a google map here. Using an API will be something we consider in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/google_bakeries.png&quot; alt=&quot;bakery_map&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 01 Dec 2016 09:04:23 -0600</pubDate>
+        <link>http://schen91020.github.io/chicago_new_location//2016/further-research/</link>
+        <guid isPermaLink="true">http://schen91020.github.io/chicago_new_location//2016/further-research/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Actions</title>
         <description>&lt;p&gt;This paragraph contains a list of items.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -107,45 +161,10 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 01 Nov 2016 10:04:23 -0500</pubDate>
-        <link>http://schen91020.github.io/chicago_new_location//2016/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://schen91020.github.io/chicago_new_location//2016/welcome-to-jekyll/</guid>
+        <pubDate>Thu, 01 Dec 2016 09:03:23 -0600</pubDate>
+        <link>http://schen91020.github.io/chicago_new_location//2016/actions/</link>
+        <guid isPermaLink="true">http://schen91020.github.io/chicago_new_location//2016/actions/</guid>
         
-        <category>jekyll</category>
-        
-        
-        <category>jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Further Research</title>
-        <description>&lt;p&gt;From the initial exploration, we found the station with highest number of rides is Clark/Lake. The station with lowest number of rides is Homan.&lt;/p&gt;
-
-&lt;p&gt;Locating these two stations on a map will be helpful.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/stations_max_min.png&quot; alt=&quot;stations_max_min&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Seeing the locations of these two stations, it explains the number of rides. It will be great to combine the number of rides per station and locate them on a map. A very rough idea looks like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/map_barcharts.jpeg&quot; alt=&quot;map_barcharts&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We have witnessed the seasonality in rides. To see if it’s weather related, I can get the historical data  and compare.&lt;/p&gt;
-
-&lt;p&gt;In the data exploration, we have mentioned if a new location is looking for steady foot traffic, perhaps looking for a station with the highest mean and lowest standard deviation might help. First look at the mean vs stdev chart grouped by stations:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/mean_std_rides.png&quot; alt=&quot;mean_std_rides&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But just like in many other fields of study, there is no free lunch. As the number of rides increase, we are also witnessing an increase in standard deviation. Therefore, applying some optimization algorithm will help in identifying a few stations here.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 01 Nov 2016 10:03:23 -0500</pubDate>
-        <link>http://schen91020.github.io/chicago_new_location//2016/page1/</link>
-        <guid isPermaLink="true">http://schen91020.github.io/chicago_new_location//2016/page1/</guid>
-        
-        <category>jekyll</category>
-        
-        
-        <category>jekyll</category>
         
       </item>
     

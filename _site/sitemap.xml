@@ -3,24 +3,9 @@
   
     
     <url>
-      <loc>http://schen91020.github.io/2016/initial-analysis/</loc>
+      <loc>http://schen91020.github.io/2016/data-exploration/</loc>
       
-        <lastmod>2016-11-01T10:04:23-05:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://schen91020.github.io/2016/welcome-to-jekyll/</loc>
-      
-        <lastmod>2016-11-01T10:04:23-05:00</lastmod>
+        <lastmod>2016-12-01T09:15:23-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -33,9 +18,24 @@
   
     
     <url>
-      <loc>http://schen91020.github.io/2016/page1/</loc>
+      <loc>http://schen91020.github.io/2016/further-research/</loc>
       
-        <lastmod>2016-11-01T10:03:23-05:00</lastmod>
+        <lastmod>2016-12-01T09:04:23-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://schen91020.github.io/2016/actions/</loc>
+      
+        <lastmod>2016-12-01T09:03:23-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -51,7 +51,7 @@
     <url>
       <loc>http://schen91020.github.io/categories/</loc>
       
-        <lastmod>2016-12-02T22:53:52-06:00</lastmod>
+        <lastmod>2016-12-03T00:10:48-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -66,7 +66,7 @@
     <url>
       <loc>http://schen91020.github.io/feed.xml</loc>
       
-        <lastmod>2016-12-02T22:53:52-06:00</lastmod>
+        <lastmod>2016-12-03T00:10:48-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -81,7 +81,7 @@
     <url>
       <loc>http://schen91020.github.io/</loc>
       
-        <lastmod>2016-12-02T22:53:52-06:00</lastmod>
+        <lastmod>2016-12-03T00:10:48-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -96,7 +96,7 @@
     <url>
       <loc>http://schen91020.github.io/js/main.js</loc>
       
-        <lastmod>2016-12-02T22:53:52-06:00</lastmod>
+        <lastmod>2016-12-03T00:10:48-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -113,7 +113,7 @@
     <url>
       <loc>http://schen91020.github.io/tags/</loc>
       
-        <lastmod>2016-12-02T22:53:52-06:00</lastmod>
+        <lastmod>2016-12-03T00:10:48-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

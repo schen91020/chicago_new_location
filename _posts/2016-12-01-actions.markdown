@@ -1,8 +1,6 @@
 ---
-title:  "Initial Analysis"
-date:   2016-11-01 15:04:23
-categories: [jekyll]
-tags: [jekyll]
+title:  "Actions"
+date:   2016-12-01 15:03:23
 ---
 This paragraph contains a list of items.
 
