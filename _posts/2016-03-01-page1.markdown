@@ -1,0 +1,23 @@
+---
+title:  "Further Research"
+date:   2016-11-01 15:03:23
+categories: [jekyll]
+tags: [jekyll]
+---
+From the initial exploration, we found the station with highest number of rides is Clark/Lake. The station with lowest number of rides is Homan.
+
+Locating these two stations on a map will be helpful.
+
+![stations_max_min](/chicago_new_location/DataAnalysis/Images/stations_max_min.png){:class="img-responsive"}
+
+Seeing the locations of these two stations, it explains the number of rides. It will be great to combine the number of rides per station and locate them on a map. A very rough idea looks like this:
+
+![map_barcharts](/chicago_new_location/DataAnalysis/Images/map_barcharts.jpeg){:class="img-responsive"}
+
+We have witnessed the seasonality in rides. To see if it's weather related, I can get the historical data  and compare.
+
+In the data exploration, we have mentioned if a new location is looking for steady foot traffic, perhaps looking for a station with the highest mean and lowest standard deviation might help. First look at the mean vs stdev chart grouped by stations:
+
+![mean_std_rides](/chicago_new_location/DataAnalysis/Images/mean_std_rides.png){:class="img-responsive"}
+
+But just like in many other fields of study, there is no free lunch. As the number of rides increase, we are also witnessing an increase in standard deviation. Therefore, applying some optimization algorithm will help in identifying a few stations here.

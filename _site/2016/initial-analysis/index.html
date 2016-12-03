@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Data Exploration</title>
+  <meta name="description" content="Analysis on finding the new location.">
+  <meta name="author" content="Samuel Chen">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A New Location in Chicago">
+  <meta name="twitter:description" content="Analysis on finding the new location.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="A New Location in Chicago">
+  <meta property="og:description" content="Analysis on finding the new location.">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/chicago_new_location/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/chicago_new_location/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/chicago_new_location/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/chicago_new_location/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/chicago_new_location/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/chicago_new_location/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/chicago_new_location/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/chicago_new_location/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/chicago_new_location/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/chicago_new_location/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/chicago_new_location/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/chicago_new_location/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/chicago_new_location/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/chicago_new_location/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/chicago_new_location/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/chicago_new_location/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/chicago_new_location/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/chicago_new_location/css/main.css">
+  <link rel="canonical" href="http://schen91020.github.io/chicago_new_location//2016/initial-analysis/">
+  <link rel="alternate" type="application/rss+xml" title="A New Location in Chicago" href="/chicago_new_location/feed.xml">
+</head>
+
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+  
+<header class="panel-cover" style="background-image: url(/chicago_new_location/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/chicago_new_location/" title="link to home of A New Location in Chicago">
+          <img src="/chicago_new_location/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">A New Location in Chicago</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">Analysis on finding the new location.</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/chicago_new_location/#blog" title="link to A New Location in Chicago blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+          
+            
+
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/samuelgchen" title="samuelgchen on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+
+            
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:samuelgchen@gmail.com" title="Email samuelgchen@gmail.com" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="/chicago_new_location/feed.xml" title="Subscribe" target="_blank">
+                <i class="icon icon-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+          
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="1 Nov 2016" class="post-meta__date date">1 Nov 2016</time> &#8226; <span class="post-meta__tags">on </span>
+    </div>
+    <h1 class="post-title">Data Exploration</h1>
+  </header>
+
+  <section class="post">
+    <p>The type of business can make a difference in terms of taking advantage of the given data. In this analysis, I am assuming that it’s a bakery that needs a lot of in-store traffic.</p>
+
+<p>Among the brick and mortar retail businesses, there is much of a difference on how each can take advantage of the given data. For instance, a bakery can plan its menu according to whether it’s a weekday (more breakfast items) or weekend (more high-tea items). But a clothing store probably will not change its inventory accordingly. The additional data that we seek can also be different. A bakery might wonder about the demographic of commuters whereas an Apple store might not care as much.</p>
+
+<p>Given the assumption of a bakery trying to expand into new locations, I proceed to explore the given data.</p>
+
+<p>The data is a compilation of time series of number of rides per station. There are 147 stations total. Let’s take a quick look at stations and their respected number of rides.</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/all_rides.png" alt="all_rides" class="img-responsive" /></p>
+
+<p>It will certainly help if we can start a bakery near stations with the highest number of rides. However, we should not take the barcharts at face value. Let’s take a quick look at the box plots.</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/box_all_rides.png" alt="box_rides" class="img-responsive" /></p>
+
+<p>As we explore the data further, it’s beneficial to keep in mind that the stations with the highest rides can be due to outliers. If the new location needs steady foot traffic, seeking highest mean and lowest standard deviation in rides might help. For now, we move on.</p>
+
+<p>These are the time series plot of the top 5 stations.</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/max_rides.png" alt="max_rides" class="img-responsive" /></p>
+
+<p>Let’s take a moving average on the data to see if there is seasonality in it’s rides. To start a new location, inventory can be adjusted due to seasonality.</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/max_rides_ma.png" alt="max_rides_ma" class="img-responsive" /></p>
+
+<p>There is a definite seasonality to the data. I wonder if it’s weather related? Or is it because people are out of town for Christmas? For now, I will make a note of it and explore that further in the next section.</p>
+
+<p>For a business, we should focus on opening locations with high foot traffic. But for completeness, let’s take a look at the stations with the lowest number of rides.</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/min_rides.png" alt="min_rides" class="img-responsive" /></p>
+
+<p>This graph looks very different. It seems some of those stations didn’t get any rides until a later time – end of 2011. The station with lowest number of rides is Homan.</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/homan_rides.png" alt="homan_rides" class="img-responsive" /></p>
+
+<p>Initially, I thought stations with a low number of rides because of proximity to downtown. But from the graph it looks like Homan is a brand new station! This is good news, perhaps the new location can take advantage of the possible lower rent near a new station.</p>
+
+<p>Let’s take a look at the next station: Cermak-McCormick Place. Interestingly enough, it looks like another new station (started in 2015).</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/cmp_rides.png" alt="cmp_rides" class="img-responsive" /></p>
+
+<p>How about one more? Oakton-Skokie station is the next station with the lowest number of rides.</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/os_rides.png" alt="os_rides" class="img-responsive" /></p>
+
+<p>The station didn’t get any rides until 2012. But its number of rides dropped to 0 during the second half of 2015. I wonder why this is the case. Could it be because other stations opened up and it took a hit? Or is the machine that reads the rides is broken? This begs the question of data integrity. Are the stations with the low rides really new or is it just because their machines are newly installed? If it’s the latter case, the new business might not take advantage of a newly developed area in terms of rent, then it has to go with the established areas with highest number of foot traffic.</p>
+
+<p>In the data, there is also a column called daytypes. City of Chicago gave some answers. There are 3 datatypes: “W” for Weekday, “A” for Saturday and “U” for Sunday/Holidays. Plotting daytypes vs. number of rides, we see:</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/daytype_rides.png" alt="bar_daytype" class="img-responsive" /></p>
+
+<p>Weekdays seem to a lot more rides. Verifying the finding with box-whisker charts:
+<img src="/chicago_new_location/DataAnalysis/Images/box_daytype_rides.png" alt="box_daytype" class="img-responsive" /></p>
+
+<p>On average, the weekdays still have more rides but not as drastic of a difference as what a barchart shows. However, notice that Sunday/Holidays have a lot of outliers. If we were to start a new location based on the rides per station, the next step will be to explore the daytype per station. Maybe some stations will have some interesting behavior over the holidays. Here is a first look at this information. This visualization is helpful. However, I would prefer to see a change of ranking per daytype per station with lines connecting from one daytype column to another. I will discuss this idea further in the next section.</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/stacked_daytype_rides.png" alt="box_daytype" class="img-responsive" /></p>
+
+  </section>
+  
+</article>
+
+
+
+      </div>
+
+      <footer class="footer">
+  <span class="footer__copyright">&copy; 2016 Samuel Chen. All rights reserved.</span>
+</footer> 
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/chicago_new_location/js/main.js"></script>
+
+    </div>
+  </body>
+</html>
