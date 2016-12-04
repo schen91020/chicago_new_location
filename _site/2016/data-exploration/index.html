@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>Data Exploration</title>
-  <meta name="description" content="Analysis on finding the new location.">
+  <meta name="description" content="Data Analysis and Future Work">
   <meta name="author" content="Samuel Chen">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -16,11 +16,11 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="A New Location in Chicago">
-  <meta name="twitter:description" content="Analysis on finding the new location.">
+  <meta name="twitter:description" content="Data Analysis and Future Work">
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="A New Location in Chicago">
-  <meta property="og:description" content="Analysis on finding the new location.">
+  <meta property="og:description" content="Data Analysis and Future Work">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/chicago_new_location/images/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/chicago_new_location/images/favicons/apple-touch-icon-60x60.png">
@@ -64,7 +64,7 @@
           <h1 class="panel-cover__title panel-title">A New Location in Chicago</h1>
         </a>
         <hr class="panel-cover__divider">
-        <p class="panel-cover__description">Analysis on finding the new location.</p>
+        <p class="panel-cover__description">Data Analysis and Future Work</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
         <div class="navigation-wrapper">
@@ -151,7 +151,7 @@
 
 <p><img src="/chicago_new_location/DataAnalysis/Images/box_all_rides.png" alt="box_rides" class="img-responsive" /></p>
 
-<p>As we explore the data further, it’s beneficial to keep in mind that the stations with the highest rides can be due to outliers. If the new location needs steady foot traffic, seeking highest mean and lowest standard deviation in rides might help. For now, we move on.</p>
+<p>From the chart, the stations with the highest rides can be due to outliers. As we explore the data further, it’s beneficial to keep that in mind. Also if the new location needs steady foot traffic, seeking highest mean and lowest standard deviation in rides might help. For now, we move on.</p>
 
 <p>These are the time series plot of the top 5 stations.</p>
 
@@ -171,7 +171,7 @@
 
 <p><img src="/chicago_new_location/DataAnalysis/Images/homan_rides.png" alt="homan_rides" class="img-responsive" /></p>
 
-<p>Initially, I thought stations with a low number of rides because of proximity to downtown. But from the graph it looks like Homan is a brand new station! This is good news, perhaps the new location can take advantage of the possible lower rent near a new station.</p>
+<p>Initially, I thought stations with a low number of rides because they are far away from downtown. But from the graph it looks like Homan is a brand new station! This is good news, perhaps the new location can take advantage of the possible lower rent near a new station.</p>
 
 <p>Let’s take a look at the next station: Cermak-McCormick Place. Interestingly enough, it looks like another new station (started in 2015).</p>
 
@@ -181,7 +181,7 @@
 
 <p><img src="/chicago_new_location/DataAnalysis/Images/os_rides.png" alt="os_rides" class="img-responsive" /></p>
 
-<p>The station didn’t get any rides until 2012. But its number of rides dropped to 0 during the second half of 2015. I wonder why this is the case. Could it be because other stations opened up and it took a hit? Or is the machine that reads the rides is broken? This begs the question of data integrity. Are the stations with the low rides really new or is it just because their machines are newly installed? If it’s the latter case, the new business might not take advantage of a newly developed area in terms of rent, then it has to go with the established areas with highest number of foot traffic.</p>
+<p>The station didn’t get any rides until 2012. But its number of rides dropped to 0 during the second half of 2015. I wonder why this is the case. Could it be because other stations opened up and it took a hit? Or a broken ride-counting machine? Or maybe construction blocked off the station? This begs the question of data integrity. Are the stations with the low rides really new or is it just because their machines are newly installed? If it’s the latter case, the new business might not take advantage of a newly developed area in terms of rent, then it has to go with the established areas with highest number of foot traffic.</p>
 
 <p>In the data, there is also a column called daytypes. City of Chicago gave some answers. There are 3 datatypes: “W” for Weekday, “A” for Saturday and “U” for Sunday/Holidays. Plotting daytypes vs. number of rides, we see:</p>
 
@@ -190,9 +190,11 @@
 <p>Weekdays seem to a lot more rides. Verifying the finding with box-whisker charts:
 <img src="/chicago_new_location/DataAnalysis/Images/box_daytype_rides.png" alt="box_daytype" class="img-responsive" /></p>
 
-<p>On average, the weekdays still have more rides but not as drastic of a difference as what a barchart shows. However, notice that Sunday/Holidays have a lot of outliers. If we were to start a new location based on the rides per station, the next step will be to explore the daytype per station. Maybe some stations will have some interesting behavior over the holidays. Here is a first look at this information. This visualization is helpful. However, I would prefer to see a change of ranking per daytype per station with lines connecting from one daytype column to another. I will discuss this idea further in the next section.</p>
+<p>On average, the weekdays still have more rides but not as drastic of a difference as what a barchart shows. However, notice that Sunday/Holidays have a lot of outliers. If we were to start a new location based on the rides per station, the next step will be to explore the daytype per station. Maybe some stations will have some interesting behavior over the holidays. Here is a first look at this information.</p>
 
 <p><img src="/chicago_new_location/DataAnalysis/Images/stacked_daytype_rides.png" alt="box_daytype" class="img-responsive" /></p>
+
+<p>This visualization is helpful. However, there is much information besides the given data that can help us. I will discuss these idea further in the next section.</p>
 
   </section>
   

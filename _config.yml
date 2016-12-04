@@ -1,6 +1,6 @@
 # Site settings
 title: A New Location in Chicago
-description: 'Analysis on finding the new location.'
+description: 'Data Analysis and Future Work'
 url: 'http://schen91020.github.io'
 baseurl: '/chicago_new_location/'
 # google_analytics: 'UA-XXXXXX-X'

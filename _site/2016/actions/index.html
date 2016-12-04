@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>Actions</title>
-  <meta name="description" content="Analysis on finding the new location.">
+  <meta name="description" content="Data Analysis and Future Work">
   <meta name="author" content="Samuel Chen">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -16,11 +16,11 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="A New Location in Chicago">
-  <meta name="twitter:description" content="Analysis on finding the new location.">
+  <meta name="twitter:description" content="Data Analysis and Future Work">
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="A New Location in Chicago">
-  <meta property="og:description" content="Analysis on finding the new location.">
+  <meta property="og:description" content="Data Analysis and Future Work">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/chicago_new_location/images/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/chicago_new_location/images/favicons/apple-touch-icon-60x60.png">
@@ -64,7 +64,7 @@
           <h1 class="panel-cover__title panel-title">A New Location in Chicago</h1>
         </a>
         <hr class="panel-cover__divider">
-        <p class="panel-cover__description">Analysis on finding the new location.</p>
+        <p class="panel-cover__description">Data Analysis and Future Work</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
         <div class="navigation-wrapper">
@@ -137,35 +137,49 @@
   </header>
 
   <section class="post">
-    <p>This paragraph contains a list of items.</p>
+    <p>We have taken a quick look at the given data. In summary:</p>
 
 <ul>
-  <li>Item 1</li>
-  <li>Item 2
-    <ul>
-      <li>Sub item</li>
-    </ul>
-  </li>
-  <li>Item three</li>
+  <li>Data shows seasonality on both daily and monthly basis. Daily seasonality shows weekday vs. weekend/holidays patterns. At the monthly level, the data shows a drop of number of rides towards December/January time frame.</li>
+  <li>The stations with the lowest number of rides can be new stations. They might become worthy options to consider due to possibility of cheaper real estate rental prices (vs. the already established frequented areas).</li>
+  <li>Weekdays tend to bring more foot traffic. However, depending on the station, Saturdays might have a great number of visitors as well.</li>
+  <li>Stations with the higher total number of rides can have a lower average number of visitors. So one cannot take the total number of rides per station at face value.</li>
+  <li>Combined with data on demographic, weather, air traffic, map, and time-stamp data, the original data set can be analyzed further to reveal key insights.</li>
 </ul>
 
-<p>The <em>quick</em> brown fox, jumped <strong>over</strong> the lazy <a href="https://en.wikipedia.org/wiki/Dog">dog</a>.</p>
+<p>Thoughts on data presentation:</p>
 
-<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve --watch</code>, which launches a web server and auto-regenerates your site when a file is updated.
-To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<ul>
+  <li>Because of the number of considerations, I would suggest to come up with a score for potential locations around stations. Clients can then decide on the location knowing the big picture.</li>
+  <li>A score can be a combination of positive factors, such as:
+    <ul>
+      <li>proximity to busy stations</li>
+      <li>proximity to office buildings</li>
+      <li>high level of average disposable income (depending on the type of store)</li>
+      <li>suitable demographic (goods dependant)</li>
+      <li>stable foot traffic</li>
+    </ul>
+  </li>
+  <li>The negative factors can include:
+    <ul>
+      <li>high number of competitions in nearby areas</li>
+      <li>high rental prices</li>
+      <li>long distance to port (if delivery is necessary)</li>
+      <li>distance away from tourist areas (goods dependant)</li>
+    </ul>
+  </li>
+  <li>The score can then be transformed with a sigmoid function and presented on top of a map. Here is a rough idea:</li>
+</ul>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p><img src="/chicago_new_location/DataAnalysis/Images/scores.jpeg" alt="scores" class="img-responsive" /></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span>
-</code></pre>
-</div>
+<p>Depending on the scope of the project, clients can click into the score and receive the full back-ground information on how the score is calculated.</p>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+<p>Thoughts on models:</p>
 
+<p>Using existing data such as existing store’s sales near the potential new locations as a dependent variable, along with the factors mentioned above as independent variables, we can construct a grid ready for modeling. Logistic regression based on cross-validation comes to mind. We can fine tune the model using Precision/Recall.</p>
+
+<p>There is much more that can be done on this project. Clarification on the project scope and client’s final goal is important. Using the Agile method -  rapid prototyping and clear communication with the client - can help along with way.</p>
 
   </section>
   

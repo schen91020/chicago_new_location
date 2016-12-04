@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A New Location in Chicago</title>
-    <description>Analysis on finding the new location.</description>
+    <description>Data Analysis and Future Work</description>
     <link>http://schen91020.github.io/chicago_new_location//</link>
     <atom:link href="http://schen91020.github.io/chicago_new_location//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 03 Dec 2016 00:10:48 -0600</pubDate>
-    <lastBuildDate>Sat, 03 Dec 2016 00:10:48 -0600</lastBuildDate>
+    <pubDate>Sat, 03 Dec 2016 20:12:19 -0600</pubDate>
+    <lastBuildDate>Sat, 03 Dec 2016 20:12:19 -0600</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -25,7 +25,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/box_all_rides.png&quot; alt=&quot;box_rides&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;As we explore the data further, it’s beneficial to keep in mind that the stations with the highest rides can be due to outliers. If the new location needs steady foot traffic, seeking highest mean and lowest standard deviation in rides might help. For now, we move on.&lt;/p&gt;
+&lt;p&gt;From the chart, the stations with the highest rides can be due to outliers. As we explore the data further, it’s beneficial to keep that in mind. Also if the new location needs steady foot traffic, seeking highest mean and lowest standard deviation in rides might help. For now, we move on.&lt;/p&gt;
 
 &lt;p&gt;These are the time series plot of the top 5 stations.&lt;/p&gt;
 
@@ -45,7 +45,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/homan_rides.png&quot; alt=&quot;homan_rides&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Initially, I thought stations with a low number of rides because of proximity to downtown. But from the graph it looks like Homan is a brand new station! This is good news, perhaps the new location can take advantage of the possible lower rent near a new station.&lt;/p&gt;
+&lt;p&gt;Initially, I thought stations with a low number of rides because they are far away from downtown. But from the graph it looks like Homan is a brand new station! This is good news, perhaps the new location can take advantage of the possible lower rent near a new station.&lt;/p&gt;
 
 &lt;p&gt;Let’s take a look at the next station: Cermak-McCormick Place. Interestingly enough, it looks like another new station (started in 2015).&lt;/p&gt;
 
@@ -55,7 +55,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/os_rides.png&quot; alt=&quot;os_rides&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The station didn’t get any rides until 2012. But its number of rides dropped to 0 during the second half of 2015. I wonder why this is the case. Could it be because other stations opened up and it took a hit? Or is the machine that reads the rides is broken? This begs the question of data integrity. Are the stations with the low rides really new or is it just because their machines are newly installed? If it’s the latter case, the new business might not take advantage of a newly developed area in terms of rent, then it has to go with the established areas with highest number of foot traffic.&lt;/p&gt;
+&lt;p&gt;The station didn’t get any rides until 2012. But its number of rides dropped to 0 during the second half of 2015. I wonder why this is the case. Could it be because other stations opened up and it took a hit? Or a broken ride-counting machine? Or maybe construction blocked off the station? This begs the question of data integrity. Are the stations with the low rides really new or is it just because their machines are newly installed? If it’s the latter case, the new business might not take advantage of a newly developed area in terms of rent, then it has to go with the established areas with highest number of foot traffic.&lt;/p&gt;
 
 &lt;p&gt;In the data, there is also a column called daytypes. City of Chicago gave some answers. There are 3 datatypes: “W” for Weekday, “A” for Saturday and “U” for Sunday/Holidays. Plotting daytypes vs. number of rides, we see:&lt;/p&gt;
 
@@ -64,9 +64,11 @@
 &lt;p&gt;Weekdays seem to a lot more rides. Verifying the finding with box-whisker charts:
 &lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/box_daytype_rides.png&quot; alt=&quot;box_daytype&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;On average, the weekdays still have more rides but not as drastic of a difference as what a barchart shows. However, notice that Sunday/Holidays have a lot of outliers. If we were to start a new location based on the rides per station, the next step will be to explore the daytype per station. Maybe some stations will have some interesting behavior over the holidays. Here is a first look at this information. This visualization is helpful. However, I would prefer to see a change of ranking per daytype per station with lines connecting from one daytype column to another. I will discuss this idea further in the next section.&lt;/p&gt;
+&lt;p&gt;On average, the weekdays still have more rides but not as drastic of a difference as what a barchart shows. However, notice that Sunday/Holidays have a lot of outliers. If we were to start a new location based on the rides per station, the next step will be to explore the daytype per station. Maybe some stations will have some interesting behavior over the holidays. Here is a first look at this information.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/stacked_daytype_rides.png&quot; alt=&quot;box_daytype&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This visualization is helpful. However, there is much information besides the given data that can help us. I will discuss these idea further in the next section.&lt;/p&gt;
 </description>
         <pubDate>Thu, 01 Dec 2016 09:15:23 -0600</pubDate>
         <link>http://schen91020.github.io/chicago_new_location//2016/data-exploration/</link>
@@ -83,7 +85,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/stations_max_min.png&quot; alt=&quot;stations_max_min&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Seeing the locations of these two stations, it explains the number of rides. It will be great to combine the number of rides per station and locate them on a map. A very rough idea looks like this:&lt;/p&gt;
+&lt;p&gt;Seeing the locations of these two stations, and knowing that the stations with low number of rides might be new, gave us some key understanding of a growing and ever expanding city. It will be great to combine the number of rides per station and locate them on a map. A very rough idea looks like this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/map_barcharts.jpeg&quot; alt=&quot;map_barcharts&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
@@ -91,7 +93,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/historical_temp_chicago.png&quot; alt=&quot;historical_weather&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The coldest months are December. Does that coincide with the lowest number of rides?&lt;/p&gt;
+&lt;p&gt;The coldest months are December/January. Does that coincide with the lowest number of rides?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/max_rides_ma.png&quot; alt=&quot;max_rides_ma&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
@@ -116,11 +118,21 @@
 &lt;p&gt;Age, heritage and language will all need to be considered. Having time-stamp on the commuters data will also help the new location to anticipate the traffic.
 Combining that with the station information, we will have a much better idea of where to start a new location. In particular, if near a busy station, during a certain time of the day, there are many kids, the bakery can prepare items that will be suitable.&lt;/p&gt;
 
-&lt;p&gt;Also note that the daytype provided is only for workday vs. Saturday and holidays. We can also explore if there are variations among different days.&lt;/p&gt;
+&lt;p&gt;Also note that the daytype provided is only for workday vs. Saturday and holidays. We can also explore if there are variations among the week days.&lt;/p&gt;
 
-&lt;p&gt;We can also explore proximity to office buildings around each potential new location. Assuming we are going to start the new location near a busy station. What about the nearby shops and competitions? I have included a google map here. Using an API will be something we consider in the future.&lt;/p&gt;
+&lt;p&gt;We can also explore proximity to office buildings around each potential new location. Not only can a bakery sell breakfast items, it can also provide lunches. The small circle represents the distance that commuters are willing to travel for during lunch break. The bigger circle represents the distance from station. The intersection is the area worth exploring. A rough plot might look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/walking_office_station.jpeg&quot; alt=&quot;walking_map&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Assuming we are going to start the new location near a busy station. What about the nearby shops and competitions? I have included a google map here. Using an API will be something we consider in the future.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/google_bakeries.png&quot; alt=&quot;bakery_map&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once a few locations are selected, for example, we choose an area within walking distance to the top 3 stations, we will need to explore it further. Searching real estate rental prices is a must. The rental cost is an essential component in building up a financial model to forecast profitability of the new location. There are many API available:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.programmableweb.com/news/40-real-estate-apis-zillow-trulia-walk-score/2012/02/15&quot;&gt;real_estate_api&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the next section, I will present a summary of this quick analysis and some thoughts on data presentation and modeling.&lt;/p&gt;
 </description>
         <pubDate>Thu, 01 Dec 2016 09:04:23 -0600</pubDate>
         <link>http://schen91020.github.io/chicago_new_location//2016/further-research/</link>
@@ -131,35 +143,49 @@ Combining that with the station information, we will have a much better idea of 
     
       <item>
         <title>Actions</title>
-        <description>&lt;p&gt;This paragraph contains a list of items.&lt;/p&gt;
+        <description>&lt;p&gt;We have taken a quick look at the given data. In summary:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2
-    &lt;ul&gt;
-      &lt;li&gt;Sub item&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Item three&lt;/li&gt;
+  &lt;li&gt;Data shows seasonality on both daily and monthly basis. Daily seasonality shows weekday vs. weekend/holidays patterns. At the monthly level, the data shows a drop of number of rides towards December/January time frame.&lt;/li&gt;
+  &lt;li&gt;The stations with the lowest number of rides can be new stations. They might become worthy options to consider due to possibility of cheaper real estate rental prices (vs. the already established frequented areas).&lt;/li&gt;
+  &lt;li&gt;Weekdays tend to bring more foot traffic. However, depending on the station, Saturdays might have a great number of visitors as well.&lt;/li&gt;
+  &lt;li&gt;Stations with the higher total number of rides can have a lower average number of visitors. So one cannot take the total number of rides per station at face value.&lt;/li&gt;
+  &lt;li&gt;Combined with data on demographic, weather, air traffic, map, and time-stamp data, the original data set can be analyzed further to reveal key insights.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The &lt;em&gt;quick&lt;/em&gt; brown fox, jumped &lt;strong&gt;over&lt;/strong&gt; the lazy &lt;a href=&quot;https://en.wikipedia.org/wiki/Dog&quot;&gt;dog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thoughts on data presentation:&lt;/p&gt;
 
-&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.
-To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Because of the number of considerations, I would suggest to come up with a score for potential locations around stations. Clients can then decide on the location knowing the big picture.&lt;/li&gt;
+  &lt;li&gt;A score can be a combination of positive factors, such as:
+    &lt;ul&gt;
+      &lt;li&gt;proximity to busy stations&lt;/li&gt;
+      &lt;li&gt;proximity to office buildings&lt;/li&gt;
+      &lt;li&gt;high level of average disposable income (depending on the type of store)&lt;/li&gt;
+      &lt;li&gt;suitable demographic (goods dependant)&lt;/li&gt;
+      &lt;li&gt;stable foot traffic&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The negative factors can include:
+    &lt;ul&gt;
+      &lt;li&gt;high number of competitions in nearby areas&lt;/li&gt;
+      &lt;li&gt;high rental prices&lt;/li&gt;
+      &lt;li&gt;long distance to port (if delivery is necessary)&lt;/li&gt;
+      &lt;li&gt;distance away from tourist areas (goods dependant)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The score can then be transformed with a sigmoid function and presented on top of a map. Here is a rough idea:&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/chicago_new_location/DataAnalysis/Images/scores.jpeg&quot; alt=&quot;scores&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;Depending on the scope of the project, clients can click into the score and receive the full back-ground information on how the score is calculated.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thoughts on models:&lt;/p&gt;
 
+&lt;p&gt;Using existing data such as existing store’s sales near the potential new locations as a dependent variable, along with the factors mentioned above as independent variables, we can construct a grid ready for modeling. Logistic regression based on cross-validation comes to mind. We can fine tune the model using Precision/Recall.&lt;/p&gt;
+
+&lt;p&gt;There is much more that can be done on this project. Clarification on the project scope and client’s final goal is important. Using the Agile method -  rapid prototyping and clear communication with the client - can help along with way.&lt;/p&gt;
 </description>
         <pubDate>Thu, 01 Dec 2016 09:03:23 -0600</pubDate>
         <link>http://schen91020.github.io/chicago_new_location//2016/actions/</link>

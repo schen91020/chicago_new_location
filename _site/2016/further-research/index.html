@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>Further Research</title>
-  <meta name="description" content="Analysis on finding the new location.">
+  <meta name="description" content="Data Analysis and Future Work">
   <meta name="author" content="Samuel Chen">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -16,11 +16,11 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="A New Location in Chicago">
-  <meta name="twitter:description" content="Analysis on finding the new location.">
+  <meta name="twitter:description" content="Data Analysis and Future Work">
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="A New Location in Chicago">
-  <meta property="og:description" content="Analysis on finding the new location.">
+  <meta property="og:description" content="Data Analysis and Future Work">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/chicago_new_location/images/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/chicago_new_location/images/favicons/apple-touch-icon-60x60.png">
@@ -64,7 +64,7 @@
           <h1 class="panel-cover__title panel-title">A New Location in Chicago</h1>
         </a>
         <hr class="panel-cover__divider">
-        <p class="panel-cover__description">Analysis on finding the new location.</p>
+        <p class="panel-cover__description">Data Analysis and Future Work</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
         <div class="navigation-wrapper">
@@ -143,7 +143,7 @@
 
 <p><img src="/chicago_new_location/DataAnalysis/Images/stations_max_min.png" alt="stations_max_min" class="img-responsive" /></p>
 
-<p>Seeing the locations of these two stations, it explains the number of rides. It will be great to combine the number of rides per station and locate them on a map. A very rough idea looks like this:</p>
+<p>Seeing the locations of these two stations, and knowing that the stations with low number of rides might be new, gave us some key understanding of a growing and ever expanding city. It will be great to combine the number of rides per station and locate them on a map. A very rough idea looks like this:</p>
 
 <p><img src="/chicago_new_location/DataAnalysis/Images/map_barcharts.jpeg" alt="map_barcharts" class="img-responsive" /></p>
 
@@ -151,7 +151,7 @@
 
 <p><img src="/chicago_new_location/DataAnalysis/Images/historical_temp_chicago.png" alt="historical_weather" class="img-responsive" /></p>
 
-<p>The coldest months are December. Does that coincide with the lowest number of rides?</p>
+<p>The coldest months are December/January. Does that coincide with the lowest number of rides?</p>
 
 <p><img src="/chicago_new_location/DataAnalysis/Images/max_rides_ma.png" alt="max_rides_ma" class="img-responsive" /></p>
 
@@ -176,11 +176,21 @@
 <p>Age, heritage and language will all need to be considered. Having time-stamp on the commuters data will also help the new location to anticipate the traffic.
 Combining that with the station information, we will have a much better idea of where to start a new location. In particular, if near a busy station, during a certain time of the day, there are many kids, the bakery can prepare items that will be suitable.</p>
 
-<p>Also note that the daytype provided is only for workday vs. Saturday and holidays. We can also explore if there are variations among different days.</p>
+<p>Also note that the daytype provided is only for workday vs. Saturday and holidays. We can also explore if there are variations among the week days.</p>
 
-<p>We can also explore proximity to office buildings around each potential new location. Assuming we are going to start the new location near a busy station. What about the nearby shops and competitions? I have included a google map here. Using an API will be something we consider in the future.</p>
+<p>We can also explore proximity to office buildings around each potential new location. Not only can a bakery sell breakfast items, it can also provide lunches. The small circle represents the distance that commuters are willing to travel for during lunch break. The bigger circle represents the distance from station. The intersection is the area worth exploring. A rough plot might look like this:</p>
+
+<p><img src="/chicago_new_location/DataAnalysis/Images/walking_office_station.jpeg" alt="walking_map" class="img-responsive" /></p>
+
+<p>Assuming we are going to start the new location near a busy station. What about the nearby shops and competitions? I have included a google map here. Using an API will be something we consider in the future.</p>
 
 <p><img src="/chicago_new_location/DataAnalysis/Images/google_bakeries.png" alt="bakery_map" class="img-responsive" /></p>
+
+<p>Once a few locations are selected, for example, we choose an area within walking distance to the top 3 stations, we will need to explore it further. Searching real estate rental prices is a must. The rental cost is an essential component in building up a financial model to forecast profitability of the new location. There are many API available:</p>
+
+<p><a href="http://www.programmableweb.com/news/40-real-estate-apis-zillow-trulia-walk-score/2012/02/15">real_estate_api</a></p>
+
+<p>In the next section, I will present a summary of this quick analysis and some thoughts on data presentation and modeling.</p>
 
   </section>
   

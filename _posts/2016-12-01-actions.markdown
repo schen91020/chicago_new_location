@@ -2,32 +2,36 @@
 title:  "Actions"
 date:   2016-12-01 15:03:23
 ---
-This paragraph contains a list of items.
+We have taken a quick look at the given data. In summary:
 
+* Data shows seasonality on both daily and monthly basis. Daily seasonality shows weekday vs. weekend/holidays patterns. At the monthly level, the data shows a drop of number of rides towards December/January time frame.
+* The stations with the lowest number of rides can be new stations. They might become worthy options to consider due to possibility of cheaper real estate rental prices (vs. the already established frequented areas).
+* Weekdays tend to bring more foot traffic. However, depending on the station, Saturdays might have a great number of visitors as well.
+* Stations with the higher total number of rides can have a lower average number of visitors. So one cannot take the total number of rides per station at face value.
+* Combined with data on demographic, weather, air traffic, map, and time-stamp data, the original data set can be analyzed further to reveal key insights.
 
-* Item 1
-* Item 2
-  - Sub item
-* Item three
+Thoughts on data presentation:
 
+* Because of the number of considerations, I would suggest to come up with a score for potential locations around stations. Clients can then decide on the location knowing the big picture.
+* A score can be a combination of positive factors, such as:
+  * proximity to busy stations
+  * proximity to office buildings
+  * high level of average disposable income (depending on the type of store)
+  * suitable demographic (goods dependant)
+  * stable foot traffic
+* The negative factors can include:
+  * high number of competitions in nearby areas
+  * high rental prices
+  * long distance to port (if delivery is necessary)
+  * distance away from tourist areas (goods dependant)
+* The score can then be transformed with a sigmoid function and presented on top of a map. Here is a rough idea:
 
-The *quick* brown fox, jumped **over** the lazy [dog](https://en.wikipedia.org/wiki/Dog).
+![scores](/chicago_new_location/DataAnalysis/Images/scores.jpeg){:class="img-responsive"}
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Depending on the scope of the project, clients can click into the score and receive the full back-ground information on how the score is calculated.
 
-Jekyll also offers powerful support for code snippets:
+Thoughts on models:
 
-``` ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
+Using existing data such as existing store's sales near the potential new locations as a dependent variable, along with the factors mentioned above as independent variables, we can construct a grid ready for modeling. Logistic regression based on cross-validation comes to mind. We can fine tune the model using Precision/Recall.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+There is much more that can be done on this project. Clarification on the project scope and client's final goal is important. Using the Agile method -  rapid prototyping and clear communication with the client - can help along with way.

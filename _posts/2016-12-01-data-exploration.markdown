@@ -16,7 +16,7 @@ It will certainly help if we can start a bakery near stations with the highest n
 
 ![box_rides](/chicago_new_location/DataAnalysis/Images/box_all_rides.png){:class="img-responsive"}
 
-As we explore the data further, it's beneficial to keep in mind that the stations with the highest rides can be due to outliers. If the new location needs steady foot traffic, seeking highest mean and lowest standard deviation in rides might help. For now, we move on.
+From the chart, the stations with the highest rides can be due to outliers. As we explore the data further, it's beneficial to keep that in mind. Also if the new location needs steady foot traffic, seeking highest mean and lowest standard deviation in rides might help. For now, we move on.
 
 These are the time series plot of the top 5 stations.
 
@@ -36,7 +36,7 @@ This graph looks very different. It seems some of those stations didn't get any 
 
 ![homan_rides](/chicago_new_location/DataAnalysis/Images/homan_rides.png){:class="img-responsive"}
 
-Initially, I thought stations with a low number of rides because of proximity to downtown. But from the graph it looks like Homan is a brand new station! This is good news, perhaps the new location can take advantage of the possible lower rent near a new station.
+Initially, I thought stations with a low number of rides because they are far away from downtown. But from the graph it looks like Homan is a brand new station! This is good news, perhaps the new location can take advantage of the possible lower rent near a new station.
 
 Let's take a look at the next station: Cermak-McCormick Place. Interestingly enough, it looks like another new station (started in 2015).
 
@@ -46,7 +46,7 @@ How about one more? Oakton-Skokie station is the next station with the lowest nu
 
 ![os_rides](/chicago_new_location/DataAnalysis/Images/os_rides.png){:class="img-responsive"}
 
-The station didn't get any rides until 2012. But its number of rides dropped to 0 during the second half of 2015. I wonder why this is the case. Could it be because other stations opened up and it took a hit? Or is the machine that reads the rides is broken? This begs the question of data integrity. Are the stations with the low rides really new or is it just because their machines are newly installed? If it's the latter case, the new business might not take advantage of a newly developed area in terms of rent, then it has to go with the established areas with highest number of foot traffic.
+The station didn't get any rides until 2012. But its number of rides dropped to 0 during the second half of 2015. I wonder why this is the case. Could it be because other stations opened up and it took a hit? Or a broken ride-counting machine? Or maybe construction blocked off the station? This begs the question of data integrity. Are the stations with the low rides really new or is it just because their machines are newly installed? If it's the latter case, the new business might not take advantage of a newly developed area in terms of rent, then it has to go with the established areas with highest number of foot traffic.
 
 In the data, there is also a column called daytypes. City of Chicago gave some answers. There are 3 datatypes: "W" for Weekday, "A" for Saturday and "U" for Sunday/Holidays. Plotting daytypes vs. number of rides, we see:
 
@@ -55,6 +55,8 @@ In the data, there is also a column called daytypes. City of Chicago gave some a
 Weekdays seem to a lot more rides. Verifying the finding with box-whisker charts:
 ![box_daytype](/chicago_new_location/DataAnalysis/Images/box_daytype_rides.png){:class="img-responsive"}
 
-On average, the weekdays still have more rides but not as drastic of a difference as what a barchart shows. However, notice that Sunday/Holidays have a lot of outliers. If we were to start a new location based on the rides per station, the next step will be to explore the daytype per station. Maybe some stations will have some interesting behavior over the holidays. Here is a first look at this information. This visualization is helpful. However, I would prefer to see a change of ranking per daytype per station with lines connecting from one daytype column to another. I will discuss this idea further in the next section.
+On average, the weekdays still have more rides but not as drastic of a difference as what a barchart shows. However, notice that Sunday/Holidays have a lot of outliers. If we were to start a new location based on the rides per station, the next step will be to explore the daytype per station. Maybe some stations will have some interesting behavior over the holidays. Here is a first look at this information.
 
 ![box_daytype](/chicago_new_location/DataAnalysis/Images/stacked_daytype_rides.png){:class="img-responsive"}
+
+This visualization is helpful. However, there is much information besides the given data that can help us. I will discuss these idea further in the next section.
