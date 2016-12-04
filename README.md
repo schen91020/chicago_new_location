@@ -4,6 +4,6 @@ Using the given data, this work completes the initial analysis and records some 
 
 # How to see the analysis
 
-Click on blog
-Click on each heading
+* Click on blog
+* Click on each heading
 
